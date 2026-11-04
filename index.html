@@ -15,11 +15,12 @@
 </head>
 
 <body>
-    
+    <main>
+   <header>
 
     <h1>Welcome to My Portfolio</h1>
 
-    <img src="images/profile.jpg" alt="My Profile Picture" width="200">
+    <img src="images/profile.jpg" alt="My Profile Picture"  width="200" height="200">
 
     <p>
         Hello! My name is <strong>Elisabeth Alemneh</strong>.
@@ -28,7 +29,6 @@
     </p>
 
     
-
     <nav>
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
@@ -37,7 +37,7 @@
         <a href="#contact">Contact</a> |
         <a href="projects.html">All Projects</a>
     </nav>
-
+</header>
     <hr>
 
     <section id="about">
@@ -49,8 +49,11 @@
             I enjoy learning new programming concepts, solving problems, and
             exploring how technology can be used to build useful solutions.
         </p>
+            </section>
 
-        <h3>What Inspires Me</h3>
+
+        <aside>
+        <h2>What Inspires Me</h2>
 
         <p>
             I believe learning is a continuous process. Every new skill gives me
@@ -82,13 +85,13 @@
         </p>
 
         <p>
-          I dirink 2 liters of H<sub>2</sub>O  everyday.
+          Fun Fact: My name was actually Zion until 3<sup>rd</sup> Grade.
         </p>
 
         <p>
             A useful reminder is <q>Practice makes progress.</q>
         </p>
-    </section>
+        </aside>
 
     <hr>
 
@@ -146,7 +149,7 @@
 
     <section id="projects">
         <h2>My Projects</h2>
-
+        <article>
         <h3>Cafeteria Management System</h3>
 
         <img src="images/project-cafeteria.png"
@@ -156,7 +159,10 @@
         <p>
             A programming project focused on managing cafeteria operations login page.
         </p>
+        </article>
 
+
+        <article>
         <h3>Searching Algorithm</h3>
 
         <img src="images/project-algorithm.png"
@@ -166,11 +172,9 @@
         <p>
             A programming project demonstrating searching techniques.
         </p>
+        </article>
 
-        <p>
-            Visit <a href="projects.html">All Projects</a> to see more details.
-        </p>
-
+        <article>
         <h3>My First C++ Program</h3>
 
         <pre><code>
@@ -182,6 +186,10 @@ int main() {
     return 0;
 }
         </code></pre>
+        </article>
+        <p>
+         <a href="projects.html">See All My Projects →</a> 
+        </p>
     </section>
 
     <hr>
@@ -340,7 +348,21 @@ int main() {
                   alt="Email">
 
         </map>
+
+        <h3>Send me a message</h3>
+           <form action="thank-you.html" method="get">
+                <fieldset>
+                <legend>Your Details</legend>
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                </fieldset>
+        </form>
     </section>
+
+</main>
 
 </body>
 </html>

@@ -16,6 +16,8 @@
 
 <body>
     <header>
+        <canvas id="logo" width="120" height="120">
+Elisabeth </canvas>
 
         <h1>Elisabeh Alemneh</h1>
 
@@ -177,7 +179,12 @@
  <label for="lvl-js">JavaScript</label>
  <meter id="lvl-js" value="0.2" min="0" max="1" low="0.3" high="0.7"
 optimum="1">20%</meter>
+
+
 </p>
+ <canvas id="skillsChart" width="300" height="150">
+    Skills bar chart
+</canvas>
 
             <h3>My Learning Roadmap</h3>
 
@@ -478,6 +485,52 @@ int main() {
         <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
 
     </footer>
+
+    <script>
+ const canvas = document.getElementById('logo');
+ const ctx = canvas.getContext('2d');
+ // 1. Blue square background: x, y, width, height
+ ctx.fillStyle = "#1f5fa8";
+ ctx.fillRect(0, 0, 120, 120);
+ // 2. White circle: centre x, centre y, radius, start angle, end angle
+ ctx.beginPath();
+ ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+ ctx.fillStyle = "white";
+ ctx.fill();
+ // 3. Initials in the middle
+ ctx.fillStyle = "#1f5fa8";
+ ctx.font = "bold 36px Arial";
+ ctx.textAlign = "center";
+ ctx.textBaseline = "middle";
+ ctx.fillText("EA", 60, 62);
+
+ // Skills bar chart
+const chart = document.getElementById("skillsChart");
+const chartCtx = chart.getContext("2d");
+
+// HTML bar
+chartCtx.fillStyle = "#263D69";
+chartCtx.fillRect(30, 34, 40, 96);
+
+// Python bar
+chartCtx.fillStyle = "#4A90E2";
+chartCtx.fillRect(120, 46, 40, 84);
+
+// JavaScript bar
+chartCtx.fillStyle = "#E0A526";
+chartCtx.fillRect(210, 106, 40, 24);
+
+// Skill names
+chartCtx.fillStyle = "black";
+chartCtx.font = "12px Arial";
+chartCtx.textAlign = "center";
+
+chartCtx.fillText("HTML", 50, 145);
+chartCtx.fillText("Python", 140, 145);
+chartCtx.fillText("JavaScript", 230, 145);
+</script>
+
+
 </body>
 
 </html>

@@ -1,0 +1,20 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.000
+Hello, my name is Elisabeth Alemneh.
+And Now I'm going to demonstrate my Baletera Café Management Login System.
+
+00:00:07.000 --> 00:00:11.000
+When I run the program,I see three main options: User, Admin, and Exit.
+
+00:00:11.000 --> 00:00:18.000
+Under User, I can register a new user
+by entering their Student ID, full name,
+phone number, and password.
+
+00:00:18.000 --> 00:00:21.000
+Then, the system checks the information
+and confirms successful registration.
+
+00:00:22.000 --> 00:00:26.000
+Thank you!
